@@ -65,3 +65,9 @@
     border-radius: 6px;
 }
 /* End Border */
+
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }   
+}
