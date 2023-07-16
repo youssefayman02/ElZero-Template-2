@@ -1,11 +1,31 @@
+:root {
+    --transition-duration: 0.3s;
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
 /* Start Box */
 
 .d-flex {
     display: flex;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .align-center {
     align-items: center;
+}
+
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }   
 }
 
 /* End Box */
@@ -14,6 +34,10 @@
 
 .p-10 {
     padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
 }
 
 .p-20 {
@@ -64,10 +88,30 @@
 .rad-6 {
     border-radius: 6px;
 }
+
+.rad-10 {
+    border-radius: 10px;
+}
+
+.border-ccc {
+    border: 1px solid #ccc;
+}
 /* End Border */
 
-@media (max-width: 767px) {
-    .hide-mobile {
-        display: none;
-    }   
+/* Start Width + Height */
+
+.w-full {
+    width: 100%;
 }
+
+/* End Width + Height */
+
+/* Start Components */
+
+.between-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* End Components */
