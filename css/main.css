@@ -268,7 +268,7 @@ ul {
         margin-left: 0;
     }
 
-    .welcome .body > div:not(:last-child) {
+    .welcome .body>div:not(:last-child) {
         margin-bottom: 20px;
     }
 }
@@ -289,7 +289,7 @@ ul {
 }
 
 .quick-draft .save:hover {
-   background-color: var(--blue-alt-color);
+    background-color: var(--blue-alt-color);
 }
 
 /* End Quick Draft Widget */
@@ -310,14 +310,14 @@ ul {
     height: 4px;
 }
 
-.targets .details .progress > span {
+.targets .details .progress>span {
     position: absolute;
     height: 100%;
     left: 0;
     top: 0;
 }
 
-.targets .details .progress > span span {
+.targets .details .progress>span span {
     position: absolute;
     bottom: 16px;
     right: -16px;
@@ -327,7 +327,7 @@ ul {
     font-size: 13px;
 }
 
-.targets .details .progress > span span::before{
+.targets .details .progress>span span::before {
     content: "";
     border-color: transparent;
     border-style: solid;
@@ -338,15 +338,15 @@ ul {
     transform: translateX(-50%);
 }
 
-.targets .details .progress > .blue span::before {
+.targets .details .progress>.blue span::before {
     border-top-color: var(--blue-color);
 }
 
-.targets .details .progress > .orange span::before {
+.targets .details .progress>.orange span::before {
     border-top-color: var(--orange-color);
 }
 
-.targets .details .progress > .green span::before {
+.targets .details .progress>.green span::before {
     border-top-color: var(--green-color);
 }
 
@@ -378,6 +378,7 @@ ul {
         width: 100%;
     }
 }
+
 /* End Tickets */
 
 /* Start Latest News */
@@ -411,7 +412,7 @@ ul {
 }
 
 @media (max-width: 767px) {
-    .latest-news .news-row  {
+    .latest-news .news-row {
         flex-direction: column;
     }
 
@@ -419,6 +420,7 @@ ul {
         margin: 10px auto;
     }
 }
+
 /* End Latest News */
 
 /* Start Tasks */
@@ -450,6 +452,7 @@ ul {
 .tasks .delete:hover {
     color: var(--red-color);
 }
+
 /* End Tasks */
 
 /* Start Latest Uploads */
@@ -462,6 +465,7 @@ ul {
     width: 40px;
     height: 40px;
 }
+
 /* End Latest Uploads */
 
 /* Start Last Project Process */
@@ -505,6 +509,7 @@ ul {
     bottom: 0;
     opacity: 0.1;
 }
+
 /* End Last Project Process */
 
 /* Start Reminders Widget */
@@ -514,21 +519,22 @@ ul {
     height: 15px;
 }
 
-.reminders ul li > .blue {
+.reminders ul li>.blue {
     border-left: 2px solid var(--blue-color);
 }
 
-.reminders ul li > .green {
+.reminders ul li>.green {
     border-left: 2px solid var(--green-color);
 }
 
-.reminders ul li > .orange {
+.reminders ul li>.orange {
     border-left: 2px solid var(--orange-color);
 }
 
-.reminders ul li > .red {
+.reminders ul li>.red {
     border-left: 2px solid var(--red-color);
 }
+
 /* End Reminders Widget */
 
 /* Start Latest Post Widget */
@@ -545,7 +551,68 @@ ul {
     border-bottom: 1px solid #eee;
     min-height: 140px;
 }
+
 /* End Latest Post Widget */
+
+/* Start Social Media Stats Widget */
+
+.social-media .box {
+    padding-left: 70px;
+}
+
+.social-media .box i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    transition: var(--transition-duration);
+}
+
+.social-media .box i:hover {
+    transform: rotate(5deg);
+}
+
+.social-media .twitter {
+    background-color: rgb(29 161 242 / 20%);
+    color: #1da1f2;
+}
+
+.social-media .twitter i,
+.social-media .twitter a {
+    background-color: #1da1f2;
+}
+
+.social-media .facebook {
+    background-color: rgb(24 119 242 / 20%);
+    color: #1da1f2;
+}
+
+.social-media .facebook i,
+.social-media .facebook a {
+    background-color: #1877f2;
+}
+
+.social-media .youtube {
+    background-color: rgb(255 0 0 / 20%);
+    color: #ff0000;
+}
+
+.social-media .youtube i,
+.social-media .youtube a {
+    background-color: #ff0000;
+}
+
+.social-media .linkedin {
+    background-color: rgb(0 119 181 / 20%);
+    color: #0077b5;
+}
+
+.social-media .linkedin i,
+.social-media .linkedin a {
+    background-color: #0077b5;
+}
+
+/* End Social Media Stats Widget */
 
 /* Start Animation */
 
