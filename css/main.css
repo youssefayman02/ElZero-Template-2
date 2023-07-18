@@ -531,6 +531,22 @@ ul {
 }
 /* End Reminders Widget */
 
+/* Start Latest Post Widget */
+
+.latest-post .avatar {
+    width: 48px;
+    height: 48px;
+}
+
+.latest-post .post-content {
+    text-transform: capitalize;
+    line-height: 1.8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    min-height: 140px;
+}
+/* End Latest Post Widget */
+
 /* Start Animation */
 
 @keyframes change-color {
