@@ -659,9 +659,29 @@ ul {
 .projects table img:not(:first-child) {
     margin-left: -20px;
 }
+
 /* End Projects Table */
 
 /* Start Settings */
+
+.settings-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .settings-page {
+        grid-template-columns: minmax(100px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.settings-page .close-message {
+    border: 1px solid #ccc;
+    resize: none;
+    min-height: 150px;
+}
 
 .toggle-checkbox {
     -webkit-appearance: none;
@@ -707,6 +727,7 @@ ul {
     left: 50px;
     color: var(--blue-color);
 }
+
 /* End Settings */
 
 /* Start Animation */
