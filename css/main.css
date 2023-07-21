@@ -719,7 +719,7 @@ ul {
     border-radius: 0 6px 6px 0;
 }
 
-.settings-page .social-boxes > div:focus-within i {
+.settings-page .social-boxes>div:focus-within i {
     color: black;
 }
 
@@ -774,6 +774,87 @@ ul {
 
 .widgets-control .control input[type="checkbox"]:checked+label::after {
     transform: scale(1);
+}
+
+.backup-control input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.backup-control .date label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.backup-control .date label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50%;
+}
+
+.backup-control .date label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    transition: var(--transition-duration);
+    transform: scale(0);
+}
+
+.backup-control .date input[type="radio"]:checked+label::after {
+    transform: scale(1);
+}
+
+.backup-control .date input[type="radio"]:checked+label::before {
+    border-color: var(--blue-alt-color);
+}
+
+.backup-control .servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .backup-control .servers {
+        flex-wrap: wrap;
+    }
+}
+
+.backup-control .servers .server {
+    border: 2px solid #eee;
+    position: relative;
+}
+
+.backup-control .servers .server:not(:last-child) {
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .backup-control .servers .server:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+.backup-control .servers .server label {
+    cursor: pointer;
+}
+
+.backup-control .servers input[type="radio"]:checked+.server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
 }
 
 .toggle-checkbox {
