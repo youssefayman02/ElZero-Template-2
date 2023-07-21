@@ -683,10 +683,21 @@ ul {
     min-height: 150px;
 }
 
+.settings-page .email {
+    display: inline-flex;
+    width: calc(100% - 80px);
+}
+
+.settings-page .sec-box:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
 .toggle-checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    display: none;
 }
 
 .toggle-switch {
