@@ -693,6 +693,36 @@ ul {
     padding-bottom: 15px;
 }
 
+.settings-page .sec-box .button {
+    transition: var(--transition-duration);
+}
+
+.settings-page .sec-box .button:hover {
+    background-color: var(--blue-alt-color);
+}
+
+.settings-page .social-boxes i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: var(--transition-duration);
+}
+
+.settings-page .social-boxes input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+}
+
+.settings-page .social-boxes > div:focus-within i {
+    color: black;
+}
+
 .toggle-checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -737,6 +767,12 @@ ul {
     content: "\f00c";
     left: 50px;
     color: var(--blue-color);
+}
+
+.settings-page :disabled {
+    cursor: no-drop;
+    background-color: #f0f4f8;
+    color: #bbb;
 }
 
 /* End Settings */
