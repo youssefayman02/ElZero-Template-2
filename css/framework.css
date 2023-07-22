@@ -64,6 +64,10 @@
     padding: 20px;
 }
 
+.pt-10 {
+    padding-top: 10px;
+}
+
 .pt-15 {
     padding-top: 15px;
 }
@@ -208,12 +212,20 @@
     color: var(--green-color);
 }
 
+.c-red {
+    color: var(--red-color);
+}
+
 /* End Color */
 
 /* Start Position */
 
 .p-relative {
     position: relative;
+}
+
+.p-absolute {
+    position: absolute;
 }
 
 /* End Position */
@@ -272,6 +284,10 @@
 
 .border-ccc {
     border: 1px solid #ccc;
+}
+
+.border-eee {
+    border: 1px solid #eee;
 }
 
 /* End Border */
